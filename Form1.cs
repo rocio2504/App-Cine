@@ -104,6 +104,7 @@ namespace Login_cine
 
         private void button1_Click(object sender, EventArgs e)
         {
+        
             //BOTÓN LOGIN
            int result = sqlControl.Login(textBox1.Text,textBox2.Text);
             if (result == 1)
@@ -112,6 +113,7 @@ namespace Login_cine
                 Ventana2 NuevaVentana = new Ventana2();
                 NuevaVentana.ShowDialog();
             }else if (result == 0)
+            
             {
                 MessageBox.Show("Error en el Usuario y/o contraseña... Intente denuevo!.....",
                    "El sistema dice:", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
