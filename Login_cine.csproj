@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7590ED0C-F2C0-4E01-9539-E103251F5D46}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Login_cine</RootNamespace>
+    <AssemblyName>Login_cine</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarUsuario.Designer.cs">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartelera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartelera.Designer.cs">
+      <DependentUpon>Cartelera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Concepto.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pelicula.Designer.cs">
+      <DependentUpon>Pelicula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporte_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Cliente.Designer.cs">
+      <DependentUpon>Reporte_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Pelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Pelicula.Designer.cs">
+      <DependentUpon>Reporte_Pelicula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Ventas.Designer.cs">
+      <DependentUpon>Reporte_Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sala.Designer.cs">
+      <DependentUpon>Sala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sala1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sala1.Designer.cs">
+      <DependentUpon>Sala1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sala2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sala2.Designer.cs">
+      <DependentUpon>Sala2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLControl.cs" />
+    <Compile Include="Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario.Designer.cs">
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta.Designer.cs">
+      <DependentUpon>Venta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventana2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventana2.Designer.cs">
+      <DependentUpon>Ventana2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AgregarUsuario.resx">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartelera.resx">
+      <DependentUpon>Cartelera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pelicula.resx">
+      <DependentUpon>Pelicula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reporte_Cliente.resx">
+      <DependentUpon>Reporte_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Pelicula.resx">
+      <DependentUpon>Reporte_Pelicula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Ventas.resx">
+      <DependentUpon>Reporte_Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sala.resx">
+      <DependentUpon>Sala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sala1.resx">
+      <DependentUpon>Sala1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sala2.resx">
+      <DependentUpon>Sala2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario.resx">
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta.resx">
+      <DependentUpon>Venta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventana2.resx">
+      <DependentUpon>Ventana2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGEN LOGIN CSHARP2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGEN LOGIN CSHARP21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGEN LOGIN CSHARP22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-borrar-boton-eliminar_318-9073.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton login2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c047497e763b7a8711208c00bc370fb4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-check-mark-button-green-checkbox-s-text-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mostrar contra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ocultar contra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_hover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton sistema.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton mantenimiento.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton operaciones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-rectangle-graphy-text-buttons-miscellaneous-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_inicio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_inicio3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_usuario2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar_usuario2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btn_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton imprimir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton imprimir1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonPrint.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_pdf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton guardar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_add_pelicula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton agregar peli2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pantalla de sala.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton cancelar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minioms.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fast and furious.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monster_hunter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Soul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wonder-woman-1984-poster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mulan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Los_nuevos_mutantes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mientras-estes-conmigo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AgregarData2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AgregarData21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf_encabezado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf_encabezado1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\igual.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vacio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
